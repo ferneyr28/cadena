@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadena de Valor</title>
+	<meta charset="utf-8">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/cronometro.css">
+	
+</head>
+<body>
+	<nav>
+		<a tab-button class="btn" href="#info-1">Cadena de Valor</a>
+		<a tab-button class="btn" href="#info-2">Objetivos</a>
+		<a tab-button class="btn" href="#info-3">Principales cambios</a>
+		<a tab-button class="btn" href="#info-4">Nueva cultura de procesos</a>
+		<a tab-button class="btn" href="#info-5">Pilares</a>
+		<a tab-button class="btn" href="#info-6">Estructura y Arquitectura</a>
+		<a tab-button class="btn" href="#puzzle">Arma tu cadena de valor</a>
+	</nav>
+	<div tab-id="info-1" tab><img src="./images/info-1.png" class="info-image"></div>
+	<div tab-id="info-2" tab><img src="./images/info-2.png" class="info-image"></div>
+	<div tab-id="info-3" tab><img src="./images/info-3.png" class="info-image"></div>
+	<div tab-id="info-4" tab><img src="./images/info-4.png" class="info-image"></div>
+	<div tab-id="info-5" tab><img src="./images/info-5.png" class="info-image"></div>
+	<div tab-id="info-6" tab><img src="./images/info-6.png" class="info-image"></div>
+	<div tab-id="puzzle" tab>
+		<p class="info shadow-4 border-r margin-t-b">
+			Haga clic izquierdo en una pieza para rotarla hacia la derecha o clic derecho para rotarla hacia la izquierda
+		</p>
+		<div id="puzzle-box" oncontextmenu="return false;">
+			<img src="./images/1.png" role="puzzle-piece" piece-number="1" piece-type="1">
+			<img src="./images/2.png" role="puzzle-piece" piece-number="2" piece-type="1">
+			<img src="./images/3.png" role="puzzle-piece" piece-number="3" piece-type="1">
+			<img src="./images/4.png" role="puzzle-piece" piece-number="4" piece-type="1">
+			<img src="./images/5.png" role="puzzle-piece" piece-number="5" piece-type="1">
+			<img src="./images/6.png" role="puzzle-piece" piece-number="6" piece-type="1">
+			<img src="./images/7.png" role="puzzle-piece" piece-number="7" piece-type="2">
+			<img src="./images/8.png" role="puzzle-piece" piece-number="8" piece-type="2">
+			<img src="./images/9.png" role="puzzle-piece" piece-number="9" piece-type="2">
+			<img src="./images/10.png" role="puzzle-piece" piece-number="10" piece-type="2">
+			<img src="./images/11.png" role="puzzle-piece" piece-number="11" piece-type="2">
+			<img src="./images/12.png" role="puzzle-piece" piece-number="12" piece-type="2">
+			<img src="./images/15.png" role="puzzle-piece" piece-number="15" piece-type="4">
+			<img src="./images/13.png" role="puzzle-piece" piece-number="13" piece-type="4">
+			<img src="./images/14.png" role="puzzle-piece" piece-number="14" piece-type="3">
+			<img src="./images/16.png" role="puzzle-piece" piece-number="16" piece-type="5">
+			<img src="./images/17.png" role="puzzle-piece" piece-number="17" piece-type="6">
+			<img src="./images/18.png" role="puzzle-piece" piece-number="18" piece-type="7">
+			<img src="./images/19.png" role="puzzle-piece" piece-number="19" piece-type="8">
+			<img src="./images/20.png" role="puzzle-piece" piece-number="20" piece-type="8">
+			<img src="./images/21.png" role="puzzle-piece" piece-number="21" piece-type="9">
+			<img src="./images/22.png" role="puzzle-piece" piece-number="22" piece-type="9">
+			
+
+			<div class="chronometer">
+			<div id="screen">00 : 00 : 00 : 00</div>
+				<div class="buttons">
+					<button class="emerald" onclick="start()">START &#9658;</button>
+					<button class="emerald" onclick="stop()">STOP &#8718;</button>
+					<button class="emerald" onclick="resume()">RESTART &#8634;</button>
+					<button class="emerald" onclick="reset()">RESET &#8635;</button>
+				</div>
+			</div>
+
+			<div id="puzzle-board" class="shadow-8 border-r">
+				<img src="./images/board.png">
+			</div>
+
+
+			<div id="alert-complete" class="info shadow-4 border-r puzzle-size">
+				<h2>
+					Felicidades 🎉🎉
+				</h2>
+				<p class="margin-t-b">
+					Haz completado tu cadena de valor correctamente
+				</p>
+				<button class="btn" id="reset">Reiniciar</button>
+			</div>
+
+			<div id="alert-error" class="info shadow-4 border-r puzzle-size">
+				⚠️ Las piezas de tu cadena de valor no están en el lugar que les corresponde. Revisa nuevamente
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contador de visitas -->
+		<center>
+ 		 <a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+		<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=270138"></a>
+  
+	<!-- Fin Contador de visitas -->
+
+	<!-- JS -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/interact.min.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/cronometro.js"></script>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+/* latin */
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Nunito Regular'), local('Nunito-Regular'), url(../fonts/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
+
+body,html{
+	color: #E42604;
+	padding: 0 10px;
+	background-color: #fcfcfc;
+}
+
+#puzzle-board, .puzzle-size{
+	width: auto;
+	min-width: 750px;
+	max-width: 70%;
+	margin: 40px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#puzzle-board > img{
+	width: 100%;
+	display: block;
+}
+
+#puzzle-box{
+	min-width: 750px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+[role="puzzle-piece"]{
+	touch-action: none;
+	cursor: move;
+	z-index: 1;
+	position: relative;
+}
+
+.info{
+	text-align: center;
+	font-size: 20px;
+	background-color: white;
+	padding: 10px 15px;
+}
+
+.shadow-8{
+	box-shadow: 0 3px 8px rgba(0,0,0,.4);
+}
+
+.shadow-4{
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.border-r{
+	border-radius: 5px;
+}
+
+.btn{
+	background: #0785d9;
+	box-shadow: 0px 2px 4px rgba(64, 59, 0, 0.25);
+	border-radius: 4px;
+	color: white;
+	border: none;
+	outline: unset !important;
+	font-weight: bold;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block;
+	transition: .3s;
+	font-size: 13px;
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
+.btn:hover{
+	box-shadow: 0px 4px 7px rgba(64, 59, 0, 0.5);
+}
+
+nav > .btn{
+	margin: 0 10px 10px 0;
+}
+
+nav > .btn:last-child{
+	margin: 0;
+}
+
+nav{
+	text-align: center;
+	padding: 10px;
+}
+
+[tab] {
+	display: none;
+	margin-bottom: 20px;
+}
+
+.info-image{
+	display: block;
+}
+
+
+.placeholder{
+	position: absolute;
+	opacity: 0;
+}
+
+h2{
+	font-weight: bold;
+}
+
+.margin-t-b{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
